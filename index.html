@@ -7,21 +7,107 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="container">
-    <form id="loginForm">
-      <h2 id="message">Login </h2>
-      <div class="form-group">
-        <label for="username">Username:</label>
-        <input type="text" id="username" name="username" required>
+
+  <div id="app">
+
+    <header class="container">
+      <nav>
+        <img class="logo" src="./assets/camera.svg" alt="camera">
+        <ul>
+          <li>Home</li>
+          <li class="active">Galeria</li>
+        </ul>
+      </nav>
+      <!-- <form action=""> -->
+      <form>
+        <div class="input-wrapper">
+          <label for="search">Pesquisa por imagens e coleções</label>
+          <input type="text" id="search" placeholder="Pesquisa..." />
+        </div>
+      </form>
+      <!-- <img src="https://randomuser.me/api/portraits/women/5.jpg" alt="images"> -->
+      <img class="avatar" src="https://avatars.githubusercontent.com/u/121724589?v=4" alt="images">
+    </header>
+
+    <main>
+      <div class="container">
+        <h1>Galeria</h1>
+        <section class="gallery">
+
+          <figure class="item">
+            <img src="https://source.unsplash.com/random?a=1" alt="imagem randômica">
+
+            <figcaption class="details">
+              <h2>organização</h2>
+              <div class="tags">
+                <span>tag</span>
+              </div>
+            </figcaption>
+          </figure>
+
+          <figure class="item">
+            <img src="https://source.unsplash.com/random?b=1" alt="imagem randômica">
+            <figcaption class="details">
+              <h2>organização</h2>
+              <div class="tags">
+                <span>tag</span>
+              </div>
+            </figcaption>
+          </figure>
+
+          <figure class="item">
+            <img src="https://source.unsplash.com/random?c=1" alt="imagem randômica">
+            <figcaption class="details">
+              <h2>organização</h2>
+              <div class="tags">
+                <span>tag</span>
+              </div>
+            </figcaption>
+          </figure>
+
+          <figure class="item">
+            <img src="https://source.unsplash.com/random?d=1" alt="imagem randômica">
+            <figcaption class="details">
+              <h2>organização</h2>
+              <div class="tags">
+                <span>tag</span>
+              </div>
+            </figcaption>
+          </figure>
+
+          <figure class="item">
+            <img src="https://source.unsplash.com/random?e=1" alt="imagem randômica">
+            <figcaption class="details">
+              <h2>organização</h2>
+              <div class="tags">
+                <span>tag</span>
+              </div>
+            </figcaption>
+          </figure>
+
+          <figure class="item">
+            <img src="https://source.unsplash.com/random?f=1" alt="imagem randômica">
+            <figcaption class="details">
+              <h2>organização</h2>
+              <div class="tags">
+                <span>tag</span>
+              </div>
+            </figcaption>
+          </figure>
+
+        </section>
       </div>
-      <div class="form-group">
-        <label for="password">Password:</label>
-        <input type="password" id="password" name="password" required>
-      </div>
-      <button type="submit">Login</button>
-    </form>
-    <!-- <div id="message"></div> -->
+    </main>
+
+    <footer class="container">
+      <p>
+        ©2024 - Marcell Souza
+      </p>
+    </footer>
+
   </div>
+
   <script src="script.js"></script>
+
 </body>
 </html>
